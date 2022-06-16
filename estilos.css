@@ -1,0 +1,682 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@font-face {
+	font-family: "AlexBrush-Regular";
+	src: url("fonts/AlexBrush-Regular.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'PT Serif', serif;
+}
+::selection {
+	color: #419B9B;
+	background: #79C8CD;
+}
+body {
+	background-color: #B1E3E3;
+}
+body h1, h2 {
+	font-family: "AlexBrush-Regular";
+}
+/*-------MENU---------*/
+*.flex-container-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header {
+	width: 100%;
+	background-color: #A2D7DC;
+	position: fixed;
+	top: 0px;
+	z-index: 1000;
+}
+#btn-menu {
+	display: none;
+}
+header label {
+	width: 45px;
+	height: 30px;
+	padding: 10px;
+	display: none;
+	border-right: 1px solid #2B7A78;
+}
+header label:hover {
+	cursor: pointer;
+}
+.menu ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.menu li {
+	border-right: 1px solid #2B7A78;
+}
+.menu li a {
+	padding: 15px 20px;
+	display: block;
+	color: #000000;
+}
+.menu a:hover {
+	font-size: 1.2em;
+	background-color: #FFFFFF;
+	color: #419B9B;
+}
+nav {
+	width: 100%;
+	max-width: 700px;
+}
+
+nav ul li {
+	display: inline;
+	list-style: none;
+}
+/*------HTML INICIO------*/
+/*-----animacion del nav se mueve hacia abajo-------*/
+.header-inicio-animacion {
+	animation: menu-movimiento  normal 5s 1s ease-out both;
+}
+@-webkit-keyframes menu-movimiento {
+	0% {
+		top: -100%;
+	}
+	100% {
+		top: 0%;
+	}
+	
+	}
+.header-inicio-animacion {
+	background-color: transparent;
+	font-weight: 700;
+	
+}
+/*-----video-------*/
+#video {
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index: -1;
+}
+.footer-inicio {
+	display: none;
+}
+.inicio-mobile{
+	display: none;
+}
+
+/*---H1 MI NOMBRE html index--------*/
+.mi-nombre {
+	width: 100%;
+	max-width: 650px;
+	padding-bottom: 20px;
+	font-size: 4.375em;
+	word-spacing: 10px;
+	color: #2B7A78;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+/*----------H1 ANIMACIÓN hmtl index, afiches, trabajos, contacto------*/
+.mi-nombre, .titulo-trabajos-u, .titulo-galerias, .h1-formulario {
+	animation: animacion-h1 normal 0.9s 1 ease-out both;
+}
+@-webkit-keyframes animacion-h1 {
+	0% {
+		letter-spacing: -0.5em;
+		opacity: 0;
+	}
+	40% {
+		opacity: 0.6;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*-------MAIN INDEX------*/
+.flex-container-main {
+	padding-top: 7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#main-container {
+	width: 100%;
+	max-width: 1300px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.datospersonales img {
+	margin: 40px 90px 5px 40px;
+	border-radius: 20px;
+}
+.datospersonales h2 {
+	width: 50%;
+	height: 40px;
+	margin: 5px 90px 5px 40px;
+	font-size: 1.875em;
+	font-family: 'PT Serif', serif;
+	font-style: normal;
+	color: #2B7A78;
+	background-color: #A2D7DC;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.datospersonales li {
+	width: 50%;
+	height: 25px;
+	font-size: 1.125em;
+	font-style: normal;
+	color: #2B7A78;
+	margin: 5px 90px 5px 40px;
+	background-color: #A2D7DC;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mi-historia h2, h3 {
+	color: #000;
+}
+main h2 {
+	width: 50%;
+	margin: 25px 30px 10px 90px;
+	font-size: 2.5em;
+}
+.mi-historia h3 {
+	width: 40%;
+	margin: 5px 30px 5px 90px;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 1.25em;
+}
+.mi-historia p {
+	margin: 5px 30px 5px 90px;
+	font-weight: 400;
+	font-style: normal;
+	text-align: justify;
+	line-height: 130%;
+	font-size: 1em;
+	color: #000;
+}
+.habilidades ul {
+	width: 70%;
+	margin: 10px 30px 10px 90px;
+	list-style: none;
+	color: #000;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1em;
+}
+.educacion {
+	width: 55%;
+	margin: 10px 30px 40px 90px;
+	padding: 20px 40px;
+	text-align: left;
+	background-color: #A2D7DC;
+	border-radius: 20px;
+}
+.educacion h2, h3, h4, p {
+	margin: 10px;
+}
+.educacion h2 {
+	width: 40%;
+	color: #2B7A78;
+}
+.educacion h3, h4, p, li {
+	text-align: left;
+	list-style: none;
+}
+.educacion h3 {
+	color: #2B7A78;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 1.25em;
+}
+.educacion h4 {
+	font-weight: 700;
+	font-style: normal;
+	font-size: 0.9375em;
+}
+.educacion p {
+	padding: 0px;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.9375em;
+}
+/*--------fondo html trabajos, galeria, contacto------------*/
+.fondo-trabajos, .fondo-galerias, .fondo-contacto {
+	width: 100%;
+	background-image: url(img/fondo-cv.jpg);
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
+}
+/*--------main de html trabajos, las galerias, contacto ------------*/
+.main-trabajos-unla, .main-galerias, .main-contacto {
+	padding-top: 7%;
+
+}
+/*----------H1 de html trabajos y las galerias------*/
+.titulo-trabajos-u, .titulo-galerias {
+	padding: 2% 20% 2%;
+	font-size: 4em;
+	text-align: center;
+	color: #2B7A78;
+}
+/*--------------HTML TRABAJOS--------------------*/
+.secciones-trabajos {
+	margin: 0px auto;
+	padding: 3% 3% 7%;
+	display: grid;
+	/*NOTA: el css original era: grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); pero al hacerlo asi sale un error en dw, solo deja con px*/
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1px));
+	grid-gap: 20px;
+	grid-auto-flow: dense;
+	justify-content: center;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	margin-block-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 20px;
+	padding-inline-end: 20px;
+}
+.seccion-trabajo {
+	height: 20em;
+	padding: 6%;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	background-color: #A2D7DC;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.seccion-trabajo a {
+	color: black;
+}
+.seccion-trabajo a:hover {
+	padding: 2% 4%;
+	font-size: 1.2em;
+	font-weight: 700;
+	color: #2B7A78;
+	background-color: white;
+	border-radius: 20px;
+	align-items: center;
+	cursor: pointer;
+}
+.titulo-secciones {
+	width: 60%;
+	margin: 5px;
+	font-size: 1.1em;
+	color: #2B7A78;
+	font-family: 'PT Serif', serif;
+	font-style: normal;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+/*--------HTML de las galerias-------------*/
+/*--------main grid-------------*/
+.galeria {
+	margin: 0px auto;
+	padding: 2% 4% 6%;
+	display: grid;
+	/*NOTA: el css original era: grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); pero al hacerlo asi sale un error en dw, solo deja con px*/
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1px));
+	grid-gap: 20px;
+	grid-auto-flow: dense;
+	justify-content: center;
+	justify-items: center;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	margin-block-end: 2em;
+	margin-block-start: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+	padding-inline-end: 40px;
+}
+
+/*--------HTML CONTACTO-------------*/
+.main-contacto {
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+}
+.texto-formulario{
+	width: 32%;
+	display: flex;
+}
+.art-texto-formulario{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.h1-formulario {
+	font-size: 3em;
+	text-align: center;
+	color: #2B7A78;
+}
+.texto-formulario p {
+	padding: 2% 4%;
+	font-weight: 700;
+}
+/*--------formulario--------*/
+.formulario-div{
+	margin-bottom: 60px;
+}
+#formulario-contacto {
+	width: 100%;
+	max-width: 450px;
+	margin: auto;
+	padding: 10px 20px;
+	background: #A2D7DC;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+.caja-type, #mensaje {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 7px;
+	fon-size: 1em;
+	box-sizing: border-box;
+	border: 2px solid #419B9B;
+	border-radius: 10px;
+}
+#mensaje {
+	min-height: 200px;
+	max-height: 300px;
+	max-width: 100%;
+}
+/*------botones del formulario--------*/
+#botones {
+	display: flex;
+}
+#boton-borrar, #boton-enviar {
+	margin: 10px 17px;
+	padding: 2% 8%;
+	font-size: 1.1em;
+	background-color: #419B9B;
+	color: white;
+	border-radius: 6px;
+	cursor:pointer;
+}
+	#boton-enviar:hover{
+	color: #2B7A78;
+	background-color: white;
+}
+	#boton-borrar:hover{
+	color: #2B7A78;
+	background-color: white;
+}
+/*------------FOOTER---------*/
+footer {
+	width: 100%;
+	height: 50px;
+	line-height: 20px;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 0.875em;
+}
+footer {
+	padding: 10px 0px;
+	background-color: #2B7A78;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+}
+#copy {
+	margin: 10px 10px 10px 40px;
+	color: #FFFFFF;
+	font-style: italic;
+	text-align: right;
+}
+.redes {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 64px 0px 0px;
+}
+.icono {
+	padding: 0px 8px;
+}
+
+@media screen and (max-width: 600px) {
+	
+	/*-----Menu Mobile--------*/
+	.flex-container-header {
+		display:block;
+		align-items: normal;
+	}
+	header label {
+		display: block;
+	}
+	.menu {
+		width: 70%;
+		margin-left: -70%;
+		position: absolute;
+		background: #A2D7DC;
+		transition: all 0.5s;
+	}
+	.menu ul {
+		display: flex;
+		flex-direction: column;
+	}
+	.menu li {
+		font-size: 0.9375em;
+		border: 1px solid #2B7A78;
+	}
+	#btn-menu:checked ~ .menu {
+		margin: 0;
+		justify-content: flex-start;
+	}
+	/*----------HTML INICIO--------*/
+	.header-inicio-animacion {
+		background-color:  #A2D7DC;
+		animation: none;
+	}
+	.body-inicio-mobile{
+	width: 100%;
+	background-image: url( "img/fondomobile.jpg");
+	background-attachment: fixed;
+	}
+	#video {
+	display: none;
+	}
+	.inicio-mobile {
+		display: block;
+	}
+	.inicio-art-mobile {
+		width: 81%;
+		padding: 30% 10%;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.inicio-art-mobile h1 {
+		font-size: 4em;
+	}
+	.inicio-art-mobile h2 {
+		font-size: 2em;
+		font-family: 'PT Serif', serif;
+		font-weight: 700;
+	}
+	.inicio-art-mobile p {
+		font-size: 1.2em;
+		text-align: center;
+	}
+	.footer-inicio {
+		display: block;
+	}
+	.footer-inicio {
+		display: flex;
+	}
+	/*--------ANIMACION DE LOS H1 HTMLS-------------*/
+	.mi-nombre, .titulo-trabajos-u, .titulo-galerias, .h1-formulario{
+		animation: none;
+	}
+	/*--------HTML INDEX-------------*/
+	/*--------H1 -------------*/
+	.mi-nombre {
+		margin: 0px;
+		font-size: 2.5em;
+		word-spacing: 5px;
+		text-align: center;
+	}
+	/*--------MAIN -------------*/
+	.flex-container-main {
+		padding-top: 30%;
+		flex-direction: column;
+	}
+	.datospersonales img {
+		display: none;
+	}
+	.datospersonales h2 {
+		width: auto;
+		margin: 20px 30px 10px;
+		font-size: 1.3125em;
+		border-radius: 30px;
+	}
+	.datospersonales li {
+		width: auto;
+		margin: 5px 30px 10px;
+		border-radius: 30px;
+		font-size: 1em;
+	}
+	main h2 {
+		width: auto;
+		margin: 20px 30px 10px;
+		font-size: 2.1875em;
+	}
+	#main-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.mi-historia h3 {
+		width: auto;
+		margin: 5px 30px;
+		font-size: 1.125em;
+	}
+	.mi-historia  p {
+		width: auto;
+		margin: 5px 30px;
+		font-size: 1.125em;
+	}
+	.habilidades ul {
+		margin: 10px 30px;
+		font-size: 0.9375em;
+	}
+	.educacion {
+		width: auto;
+		margin: 20px 30px 30px;
+	}
+	.educacion h3 {
+		font-size: 1.125em;
+	}
+	.educacion h4 {
+		font-size: 0.9375em;
+	}
+	.educacion p {
+		font-size: 0.9375em;
+	}
+	
+	/*--------body html trabajos, afiches, contacto------------*/
+	.fondo-trabajos, .fondo-galerias, .fondo-contacto {
+		background-color: #DEF2F1;
+		background-image: none;
+}
+	/*--------GRID html trabajos------------*/
+	.seccion-trabajo {
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1px));
+		grid-gap: 23px;
+		padding: 1% 3% 1%;
+		height: 24em;
+	}
+	.seccion-trabajo a {
+		padding: 6% 30%;
+		color: white;
+		font-size: 1.2em;
+		font-weight: 700;
+		background-color: #2B7A78;
+		border-radius: 20px;
+		align-items: center;
+	}
+	.seccion-trabajo a:hover {
+		padding: 6% 30%;
+		font-size: 1.2em;
+		font-weight: 700;
+		color: #2B7A78;
+		background-color: white;
+	
+	}
+	/*-------- html afiches------------*/
+	.galeria {
+		grid-template-columns: repeat(auto-fit, minmax(204px, 1px));
+	}
+	/*-------FORMULARIO HTML MOBILE---------*/
+	.main-contacto {
+		flex-direction: column;
+		align-items: center;
+	}
+	.texto-formulario{
+		width: 85%;
+		padding-top:10%;
+		flex: none;
+	}
+	.texto-formulario p {
+		text-align: center;
+	}
+	.formulario {
+		padding: 6% 7%;
+	}
+	.formulario-div {
+		width: auto;
+	}
+	#botones {
+		justify-content: center;
+	}
+	#formulario-contacto {
+		width: 100%;
+	}
+	/*--------FOOTER-------------*/
+	footer {
+		padding: 10px 0px;
+		line-height: 15px;
+		font-size: 0.8125em;
+	}
+	footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center
+	}
+	#copy {
+		margin: 10px 10px 5px;
+	}
+	.redes {
+		padding: 0px;
+	}
+}
