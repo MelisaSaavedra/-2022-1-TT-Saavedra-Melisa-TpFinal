@@ -90,7 +90,7 @@ nav ul li {
 		top: 0%;
 	}
 	
-	}
+}
 .header-inicio-animacion {
 	background-color: transparent;
 	font-weight: 700;
@@ -99,10 +99,8 @@ nav ul li {
 /*-----video-------*/
 #video {
 	position: fixed;
-	min-width: 100%;
-	min-height: 100%;
 	top: 50%;
-	left: 50%;
+	left: 38%;
 	transform: translateX(-50%) translateY(-50%);
 	z-index: -1;
 }
@@ -506,9 +504,12 @@ footer {
 	.inicio-mobile {
 		display: block;
 	}
+	.inicio-mobile {
+		padding: 30% 2% 20%;
+	}
 	.inicio-art-mobile {
-		width: 81%;
-		padding: 30% 10%;
+		width: auto;
+		margin: 20px 31px 30px;
 		color: white;
 		display: flex;
 		flex-direction: column;
