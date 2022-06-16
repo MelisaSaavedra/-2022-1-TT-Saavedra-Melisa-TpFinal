@@ -6,11 +6,13 @@
 <title>Contacto- Melisa Saavedra</title>
 <link href="estilos.css" rel="stylesheet" type="text/css">
 </head>
-<body class="fondo-contacto">
+<body class="fondo">
 	<!---------------HEADER----------------------------->
 	<header class="flex-container-header">
 		<input type="checkbox" id="btn-menu">
-		<label for="btn-menu"><img src= "img/menu.png" alt="menu"></label>
+		<label for="btn-menu">
+			<img src= "img/menu.png" alt="menu">
+		</label>
 		<nav class="menu">
 			<ul>
 				<li>
@@ -33,9 +35,7 @@
 		<!-- formulario -->
 		<section class="texto-formulario">
 			<article class="art-texto-formulario">
-				<h1 class="h1-formulario">
-					¡Escribíme y hablamos!
-				</h1>
+				<h1 class="h1-formulario">¡Escribíme y hablamos!</h1>
 				<p>
 					Si estás interesado/a en que te envié presupuesto para tu diseño o simplemente tenes alguna duda que te corroe, rellena el formulario y me pondré en contacto contigo.
 				</p>
@@ -44,14 +44,15 @@
 		<section class="formulario">
 			<div class="formulario-div">
 				<form id="formulario-contacto" method="post" action="mailto:melisasaavedra@outlook.com" subject="cliente" target="_self" enctype="text/plain">
-						<label for="nombre">* Nombre</label>
-						<input class="caja-type" type="nombre" name="nombre" id="nombre" required>
-						<label for="apellido">* Apellido</label>
-						<input class="caja-type" type="apellido" name="apellido" id="apellido" requied>
-						<label for="contacto-email">* Email</label>
-						<input class="caja-type" type="email" name="contacto-email" id="contacto-email" required>
-						<label for="mensaje">* Hablame de vos y tu proyecto</label>
-						<textarea name="mensaje" id="mensaje" maxlength="600" placeholder="Acá podes explayarte todo lo que quieras. Contame más cosas sobre vos, tu proyecto, tus ideas, que necesitas exactamente para el diseño... ¡No te cortes!"></textarea>
+					<label for="nombre">* Nombre</label>
+					<input class="caja-type" type="nombre" name="nombre" id="nombre" required>
+					<label for="apellido">* Apellido</label>
+					<input class="caja-type" type="apellido" name="apellido" id="apellido" requied>
+					<label for="contacto-email">* Email</label>
+					<input class="caja-type" type="email" name="contacto-email" id="contacto-email" required>
+					<label for="mensaje">* Hablame de vos y tu proyecto</label>
+					<textarea name="mensaje" id="mensaje" maxlength="600" placeholder="Acá podes explayarte todo lo que quieras. Contame más cosas sobre vos, tu proyecto, tus ideas, que necesitas exactamente para el diseño... ¡No te cortes!">
+					</textarea>
 					<div id="botones">
 						<input id="boton-borrar" type="reset" value="borrar">
 						<input id="boton-enviar" type="submit" value="enviar">

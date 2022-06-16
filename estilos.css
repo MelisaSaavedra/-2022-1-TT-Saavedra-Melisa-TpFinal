@@ -89,12 +89,10 @@ nav ul li {
 	100% {
 		top: 0%;
 	}
-	
 }
 .header-inicio-animacion {
 	background-color: transparent;
 	font-weight: 700;
-	
 }
 /*-----video-------*/
 #video {
@@ -255,7 +253,7 @@ main h2 {
 	font-size: 0.9375em;
 }
 /*--------fondo html trabajos, galeria, contacto------------*/
-.fondo-trabajos, .fondo-galerias, .fondo-contacto {
+.fondo {
 	width: 100%;
 	background-image: url(img/fondo-cv.jpg);
 	background-size: 100vw 100vh;
@@ -264,7 +262,6 @@ main h2 {
 /*--------main de html trabajos, las galerias, contacto ------------*/
 .main-trabajos-unla, .main-galerias, .main-contacto {
 	padding-top: 7%;
-
 }
 /*----------H1 de html trabajos y las galerias------*/
 .titulo-trabajos-u, .titulo-galerias {
@@ -353,7 +350,6 @@ main h2 {
 /*--------HTML CONTACTO-------------*/
 .main-contacto {
 	display: flex;
-	justify-content: center;
 	justify-content: space-evenly;
 }
 .texto-formulario{
@@ -417,11 +413,11 @@ main h2 {
 	border-radius: 6px;
 	cursor:pointer;
 }
-	#boton-enviar:hover{
+	#boton-enviar:hover {
 	color: #2B7A78;
 	background-color: white;
 }
-	#boton-borrar:hover{
+	#boton-borrar:hover {
 	color: #2B7A78;
 	background-color: white;
 }
@@ -493,7 +489,7 @@ footer {
 		background-color:  #A2D7DC;
 		animation: none;
 	}
-	.body-inicio-mobile{
+	.body-inicio-mobile {
 	width: 100%;
 	background-image: url( "img/fondomobile.jpg");
 	background-attachment: fixed;
@@ -536,7 +532,7 @@ footer {
 		display: flex;
 	}
 	/*--------ANIMACION DE LOS H1 HTMLS-------------*/
-	.mi-nombre, .titulo-trabajos-u, .titulo-galerias, .h1-formulario{
+	.mi-nombre, .titulo-trabajos-u, .titulo-galerias, .h1-formulario {
 		animation: none;
 	}
 	/*--------HTML INDEX-------------*/
@@ -581,7 +577,7 @@ footer {
 		margin: 5px 30px;
 		font-size: 1.125em;
 	}
-	.mi-historia  p {
+	.mi-historia p {
 		width: auto;
 		margin: 5px 30px;
 		font-size: 1.125em;
@@ -605,10 +601,10 @@ footer {
 	}
 	
 	/*--------body html trabajos, afiches, contacto------------*/
-	.fondo-trabajos, .fondo-galerias, .fondo-contacto {
+	.fondo {
 		background-color: #DEF2F1;
 		background-image: none;
-}
+	}
 	/*--------GRID html trabajos------------*/
 	.seccion-trabajo {
 		grid-template-columns: repeat(auto-fit, minmax(170px, 1px));
@@ -631,7 +627,6 @@ footer {
 		font-weight: 700;
 		color: #2B7A78;
 		background-color: white;
-	
 	}
 	/*-------- html afiches------------*/
 	.galeria {
@@ -642,7 +637,7 @@ footer {
 		flex-direction: column;
 		align-items: center;
 	}
-	.texto-formulario{
+	.texto-formulario {
 		width: 85%;
 		padding-top:10%;
 		flex: none;
