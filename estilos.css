@@ -77,9 +77,9 @@ nav ul li {
 	display: inline;
 	list-style: none;
 }
-/*------HTML INICIO------*/
+/*------HTML INDEX------*/
 /*-----animacion del nav se mueve hacia abajo-------*/
-.header-inicio-animacion {
+.header-index-animacion {
 	animation: menu-movimiento  normal 5s 1s ease-out both;
 }
 @-webkit-keyframes menu-movimiento {
@@ -90,7 +90,7 @@ nav ul li {
 		top: 0%;
 	}
 }
-.header-inicio-animacion {
+.header-index-animacion {
 	background-color: transparent;
 	font-weight: 700;
 }
@@ -100,29 +100,15 @@ nav ul li {
 	top: 50%;
 	left: 38%;
 	transform: translateX(-50%) translateY(-50%);
-	z-index: -1;
 }
-.footer-inicio {
+.footer-index {
 	display: none;
 }
-.inicio-mobile{
+.index-mobile{
 	display: none;
 }
 
-/*---H1 MI NOMBRE html index--------*/
-.mi-nombre {
-	width: 100%;
-	max-width: 650px;
-	padding-bottom: 20px;
-	font-size: 4.375em;
-	word-spacing: 10px;
-	color: #2B7A78;
-	display: flex;
-	justify-content: center;
-	text-align: center;
-}
-
-/*----------H1 ANIMACIÓN hmtl index, afiches, trabajos, contacto------*/
+/*H1 ANIMACIÓN html inicio, trabajos, contacto, galerias (htmls: afiches, editorial, marcas y branding)*/
 .mi-nombre, .titulo-trabajos-u, .titulo-galerias, .h1-formulario {
 	animation: animacion-h1 normal 0.9s 1 ease-out both;
 }
@@ -138,7 +124,19 @@ nav ul li {
 		opacity: 1;
 	}
 }
-/*-------MAIN INDEX------*/
+/*------HTML INICIO------*/
+/*-------MAIN------*/
+.mi-nombre {
+	width: 100%;
+	max-width: 650px;
+	padding-bottom: 20px;
+	font-size: 4.375em;
+	word-spacing: 10px;
+	color: #2B7A78;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
 .flex-container-main {
 	padding-top: 7%;
 	display: flex;
@@ -252,18 +250,18 @@ main h2 {
 	font-style: normal;
 	font-size: 0.9375em;
 }
-/*--------fondo html trabajos, galeria, contacto------------*/
+/*--fondo html trabajos, contacto, galerias (htmls: afiches, editorial, marcas y branding)--*/
 .fondo {
 	width: 100%;
 	background-image: url(img/fondo-cv.jpg);
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
 }
-/*--------main de html trabajos, las galerias, contacto ------------*/
+/*----main de html trabajos, contacto,  galerias (htmls: afiches, editorial, marcas y branding)--*/
 .main-trabajos-unla, .main-galerias, .main-contacto {
 	padding-top: 7%;
 }
-/*----------H1 de html trabajos y las galerias------*/
+/*----------H1 de html trabajos, galerias (htmls: afiches, editorial, marcas y branding)------*/
 .titulo-trabajos-u, .titulo-galerias {
 	padding: 2% 20% 2%;
 	font-size: 4em;
@@ -325,7 +323,7 @@ main h2 {
 	justify-content: center;
 }
 
-/*--------HTML de las galerias-------------*/
+/*--------HTML galerias (htmls: afiches, editorial, marcas y branding)-------------*/
 /*--------main grid-------------*/
 .galeria {
 	margin: 0px auto;
@@ -373,7 +371,7 @@ main h2 {
 	font-weight: 700;
 }
 /*--------formulario--------*/
-.formulario-div{
+.formulario-art{
 	margin-bottom: 60px;
 }
 #formulario-contacto {
@@ -445,6 +443,7 @@ footer {
 	font-style: italic;
 	text-align: right;
 }
+/*-----iconos redes de  footer-----*/
 .redes {
 	display: flex;
 	flex-direction: row;
@@ -457,7 +456,7 @@ footer {
 
 @media screen and (max-width: 600px) {
 	
-	/*-----Menu Mobile--------*/
+	/*-----MENU HAMBURGUESA Mobile--------*/
 	.flex-container-header {
 		display:block;
 		align-items: normal;
@@ -484,26 +483,26 @@ footer {
 		margin: 0;
 		justify-content: flex-start;
 	}
-	/*----------HTML INICIO--------*/
-	.header-inicio-animacion {
-		background-color:  #A2D7DC;
+	/*----------HTML INDEX--------*/
+	.header-index-animacion {
+		background-color: #A2D7DC;
 		animation: none;
 	}
-	.body-inicio-mobile {
+	.body-index-mobile {
 	width: 100%;
-	background-image: url( "img/fondomobile.jpg");
+	background-image: url("img/fondomobile.jpg");
 	background-attachment: fixed;
 	}
 	#video {
 	display: none;
 	}
-	.inicio-mobile {
+	.index-mobile {
 		display: block;
 	}
-	.inicio-mobile {
+	.index-mobile {
 		padding: 30% 2% 20%;
 	}
-	.inicio-art-mobile {
+	.index-art-mobile {
 		width: auto;
 		margin: 20px 31px 30px;
 		color: white;
@@ -513,29 +512,30 @@ footer {
 		align-items: center;
 		text-align: center;
 	}
-	.inicio-art-mobile h1 {
+	.index-art-mobile h1 {
 		font-size: 4em;
 	}
-	.inicio-art-mobile h2 {
+	.index-art-mobile h2 {
 		font-size: 2em;
 		font-family: 'PT Serif', serif;
 		font-weight: 700;
 	}
-	.inicio-art-mobile p {
+	.index-art-mobile p {
 		font-size: 1.2em;
 		text-align: center;
 	}
-	.footer-inicio {
+	.footer-index {
 		display: block;
 	}
-	.footer-inicio {
+	.footer-index {
 		display: flex;
 	}
 	/*--------ANIMACION DE LOS H1 HTMLS-------------*/
 	.mi-nombre, .titulo-trabajos-u, .titulo-galerias, .h1-formulario {
 		animation: none;
+		text-align: center;
 	}
-	/*--------HTML INDEX-------------*/
+	/*--------HTML INICIO-------------*/
 	/*--------H1 -------------*/
 	.mi-nombre {
 		margin: 0px;
@@ -599,8 +599,7 @@ footer {
 	.educacion p {
 		font-size: 0.9375em;
 	}
-	
-	/*--------body html trabajos, afiches, contacto------------*/
+	/*---body html trabajos, contacto, galerias (htmls: afiches, editorial, marcas y branding)---*/
 	.fondo {
 		background-color: #DEF2F1;
 		background-image: none;
@@ -611,6 +610,10 @@ footer {
 		grid-gap: 23px;
 		padding: 1% 3% 1%;
 		height: 24em;
+	}
+	/*------------------*/
+	.titulo-trabajos-u {
+		padding: 20% 0%;
 	}
 	.seccion-trabajo a {
 		padding: 6% 30%;
@@ -628,7 +631,7 @@ footer {
 		color: #2B7A78;
 		background-color: white;
 	}
-	/*-------- html afiches------------*/
+	/*--------GRID galerias (htmls: afiches, editorial, marcas y branding)------------*/
 	.galeria {
 		grid-template-columns: repeat(auto-fit, minmax(204px, 1px));
 	}
@@ -657,7 +660,7 @@ footer {
 	#formulario-contacto {
 		width: 100%;
 	}
-	/*--------FOOTER-------------*/
+	/*--------FOOTER MOBILE-------------*/
 	footer {
 		padding: 10px 0px;
 		line-height: 15px;
